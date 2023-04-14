@@ -25,7 +25,7 @@ class WordSearch {
     for (let index = 0; index < targetArray.length; index++) {
       // get first letter locations
       const word = targetArray[index]; // get the first word from the list of words to find
-      console.log({ word })
+      //console.log({ word })
       this.#foundWords[word] = this.#wordSearch(word); // search for the word
     }
     return this.#foundWords
@@ -118,4 +118,4 @@ class WordSearch {
   }
 }
 
-export default WordSearch;
+module.exports = WordSearch
